@@ -81,7 +81,7 @@
   }
 
   .fantasy-button {
-    @apply relative flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-foreground bg-primary rounded-md group;
+    @apply relative flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-foreground bg-primary rounded-md;
     box-shadow: 0 4px 0 hsl(var(--ring));
     transition: all 0.3s ease-out;
   }
