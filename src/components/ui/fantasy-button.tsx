@@ -3,7 +3,7 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 interface FantasyButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "accent" | "gold";
+  variant?: "primary" | "secondary" | "accent" | "gold" | "destructive";
   size?: "sm" | "md" | "lg";
   children: React.ReactNode;
 }
@@ -14,7 +14,8 @@ const FantasyButton = React.forwardRef<HTMLButtonElement, FantasyButtonProps>(
       primary: "bg-primary",
       secondary: "bg-secondary",
       accent: "bg-accent",
-      gold: "bg-[#E5C100] text-black shadow-amber-700/30"
+      gold: "bg-[#E5C100] text-black shadow-amber-700/30",
+      destructive: "bg-destructive text-destructive-foreground"
     };
 
     const sizeStyles = {
